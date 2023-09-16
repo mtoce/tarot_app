@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Mooli&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.btn-gold {
+  @apply rounded-full border border-gold bg-space text-gold py-1.5 px-5 transition-all 
+  hover:bg-white-base hover:text-space text-center text-sm items-center justify-center
+}
+
