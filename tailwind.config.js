@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+// const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
@@ -13,7 +15,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        mooli: ["Mooli" ]
+        sans: ["var(--font-opensans)"],
+        mono: ["var(--font-mono)"],
+        cursive: ["var(--font-fuggles)"],
       },
       colors: {
         // Purple palette (main/home)

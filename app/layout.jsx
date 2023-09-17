@@ -7,9 +7,36 @@ export const metadata = {
   description: 'Tarot Readings with Specialized Results for You!',
 }
 
+import { Open_Sans, Roboto_Mono, Fuggles } from 'next/font/google';
+ 
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-opensans',
+})
+
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-mono',
+})
+
+const fuggles = Fuggles({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-fuggles',
+})
+
+// const mooli = Mooli({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-mooli',
+// })
+
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className={`${openSans.variable} ${robotoMono.variable} font-sans`}>
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
