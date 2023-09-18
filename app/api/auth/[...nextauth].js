@@ -4,7 +4,7 @@ import FacebookProvider from 'next-auth/providers/facebook'
 import GoogleProvider from 'next-auth/providers/google'
 import EmailProvider from 'next-auth/providers/email'
 
-export default NextAuth({
+export const authOptions = {
   providers: [
     // OAuth authentication providers...
     AppleProvider({
@@ -24,5 +24,7 @@ export default NextAuth({
       server: process.env.MAIL_SERVER,
       from: 'NextAuth.js <no-reply@example.com>'
     }),
-  ]
-})
+  ],
+}
+
+export default NextAuth(authOptions)

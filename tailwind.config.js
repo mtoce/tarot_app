@@ -16,7 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-opensans)"],
-        mono: ["var(--font-mono)"],
+        mono: ["var(--font-roboto-mono)"],
         cursive: ["var(--font-fuggles)"],
       },
       colors: {
