@@ -32,26 +32,33 @@ const Nav = () => {
             {/* check if user is logged in */}
             {session?.user 
             ? (
-                <div className='flex gap-3 md:gap-5'>
-                    <Link href='/reading'
-                    className='btn_gold'>
-                        Begin Reading
-                    </Link>
-                    <button onClick={signOut} className='btn_gold'>
-                        Sign Out
-                    </button>
-                    <Link href='/profile'>
-                        <Image
-                            src={session?.user.image}
-                            width={37}
-                            height={37}
-                            className='rounded-full'
-                            alt='profile'
-                        />
-                    </Link>
+                <div>
+                    <h1>
+                        User logged in
+                    </h1>
                 </div>
+
+                // <div className='flex gap-3 md:gap-5'>
+                //     <Link href='/reading'
+                //     className='btn_gold'>
+                //         Begin Reading
+                //     </Link>
+                //     <button onClick={signOut} className='btn_gold'>
+                //         Sign Out
+                //     </button>
+                //     <Link href='/profile'>
+                //         <Image
+                //             src={session?.user.image}
+                //             width={37}
+                //             height={37}
+                //             className='rounded-full'
+                //             alt='profile'
+                //         />
+                //     </Link>
+                // </div>
             ) : (
-                <>
+                <div>
+                    console.log({providers})
                     {providers &&
                         Object.values(providers).map((provider, index) => (
                             <button
@@ -62,14 +69,28 @@ const Nav = () => {
                             >
                                 Sign In
                             </button>
-                        ))}
-                </>
+                        ))
+                    }
+                </div>
+                // <>
+                    // {providers &&
+                    //     Object.values(providers).map((provider, index) => (
+                    //         <button
+                    //             type='button'
+                    //             key={provider.name}
+                    //             onClick={() => signIn(provider)}
+                    //             className='btn_gold'
+                    //         >
+                    //             Sign In
+                    //         </button>
+                    //     ))}
+                // </>
             )}
         </div>
-
         {/* Mobile Navigation */}
-        <div className='sm:hidden flex relative'>{/* check if user is logged in */}
-            {/* check if user is logged in */}
+        {/*         
+        <div className='sm:hidden flex relative'>
+            // check if user is logged in
             {session?.user ? (
                 <div className='flex'>
                     <Image
@@ -125,7 +146,7 @@ const Nav = () => {
                         ))}
                 </>
             )}
-        </div>
+        </div> */}
     </nav>
   )
 }
