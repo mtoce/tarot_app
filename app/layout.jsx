@@ -1,7 +1,7 @@
 import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
-import SignInButton from '@components/SignInButton';
+import Hero from '@components/Hero';
 
 export const metadata = {
   title: 'Totally Tarot',
@@ -45,8 +45,8 @@ const RootLayout = ({ children }) => {
       <body>
         <Provider>
           <main className='app'>
-            {/* <Nav /> */}
-            <SignInButton />
+            <Nav />
+            {/* <Hero /> */}
             {children}
           </main>
         </Provider>

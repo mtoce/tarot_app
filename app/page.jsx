@@ -1,11 +1,12 @@
 import Image from 'next/image'
-
-
+import Hero from '@components/Hero'
+import Carousel from '@components/Carousel'
 
 const Home = () => {
   return (
     <section>
-      <h1 className='font-sans'>App Goes Here.</h1>
+      <Hero />
+      <Carousel />
     </section>
   )
 }

@@ -11,7 +11,7 @@
 }
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 bg-space text-gold;
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 py-4 bg-space text-white-s;
 }
 
 .btn_gold {
@@ -19,3 +19,7 @@
   hover:bg-white-base hover:text-space text-center text-sm items-center justify-center
 }
 
+.btn_white-s {
+  @apply rounded-full border border-white-s bg-space text-white-s py-1.5 px-5 transition-all 
+  hover:bg-white-s hover:text-space text-center text-sm items-center justify-center
+}
