@@ -23,11 +23,11 @@ const Nav = () => {
                 alt='Totally Tarot logo'
                 width={50}
                 height={50}
-                className=' rounded-full object-contain'
+                className='rounded-full object-contain'
             />
         </Link>
         {/* Desktop Navigation */}
-        <div className='sm:flex hidden'>
+        <div>
             {/* check if user is logged in */}
             {session?.user 
             ? (
