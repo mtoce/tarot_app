@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
+import Carousel from '@components/Carousel'
 
 const Hero = () => {
   return (
     <div>
-        <h1>Explore yourself with Tarot!</h1>
-        
+        <h1>Hero</h1>
+        <Carousel />
     </div>
   )
 }

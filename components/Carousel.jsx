@@ -1,23 +1,28 @@
 "use client"
 import React from 'react'
+import Image from 'next/Image'
+// (require.context isn't working properly, maybe a NEXT compatability issue? - So I went with using cwd to get the path and fs.readdir instead of this approach)
+// const path = require.context('/images/rider_waite/major_arcana', false)
+// const majorArcanaImages = path.keys().map(path)
+// Import images from folder using ~cwd~ and ~readdir~
+// const LoadImages = async () => {
+//   const imageDirectory = path.join(process.cwd(), 'assets/images/rider_waite/major_arcana')
+//   const imageFilenames = await fs.readdirSync(imageDirectory)
+//   console.log(imageFilenames)
 
-// import major arcana images
-const major_images = require.context('../public/assets/images/rider_waite/major_arcana', true)
-// map over 
-const majorImageList = major_images.keys().map(image => major_images(image))
-
+//   return imageFilenames
+// }
 const Carousel = () => {
   return (
     <div className='container'>
         <div className='slideshow'>
-          console.log(majorImageList)
-            {/* <img
-                src={majorImageList[0]} 
-                alt='MajorArcanaCards'
-                className='MajorArcana'
-                // width={20}
-                // height={50}
-            /> */}
+            <Image
+              src="/the_fool.jpg"
+              alt='MajorArcanaCards'
+              className='MajorArcana'
+              width={100}
+              height={500}
+            />
             Carousel
         </div>
     </div>
