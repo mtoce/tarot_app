@@ -16,11 +16,12 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className='flex justify-between w-full mb-16 pt-3'>
+    <nav className='flex justify-between w-full mb-16 pt-3 bg-gold'>
         <Link href="/" className='flex gap-2 flex-center'>
             <Image 
                 src='/images/logo2.svg'
                 alt='Totally Tarot logo'
+                priority={true}
                 width={50}
                 height={50}
                 className='rounded-full object-contain'

@@ -14,6 +14,18 @@
   @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 py-4 bg-space text-white-s;
 }
 
+.section {
+  @apply pt-4 pb-4
+}
+
+.heading {
+  @apply text-xl font-serif font-bold pb-2
+}
+
+.paragraph {
+  @apply text-xs font-mono pt-2
+}
+
 .btn_gold {
   @apply rounded-full border border-gold bg-space text-gold py-1.5 px-5 transition-all 
   hover:bg-white-base hover:text-space text-center text-sm items-center justify-center
