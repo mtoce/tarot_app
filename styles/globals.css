@@ -15,7 +15,7 @@
 }
 
 .section {
-  @apply pt-4 pb-4
+  @apply pt-4 pb-4 flex md:flex-row flex-col
 }
 
 .heading {
@@ -35,3 +35,8 @@
   @apply rounded-full border border-white-s bg-space text-white-s py-1.5 px-5 transition-all 
   hover:bg-white-s hover:text-space text-center text-sm items-center justify-center
 }
+
+.gold-gradient-hover {
+  @apply hover:bg-gradient-to-r from-white-s to-gold text-space
+}
+

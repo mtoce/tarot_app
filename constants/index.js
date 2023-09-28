@@ -1,39 +1,43 @@
 // constants/index.js
 
 export const WhyBlurb = {
-    second: "Through Tarot, you're encouraged to explore the depths of your psyche and confront the questions that linger in your mind. Each card's symbolism and interpretation provide a unique perspective, guiding you toward greater self-awareness and understanding.",
-    third: "This ancient practice encourages you to trust your intuition, fostering a stronger connection to your inner wisdom. As you engage in Tarot readings, you'll find that it not only helps you make decisions but also encourages personal growth by promoting mindfulness and self-reflection.",
-    fourth: "Incorporating Tarot into your life can be a transformative and empowering experience, enabling you to navigate life's twists and turns with newfound clarity and purpose. So, whether you're seeking guidance, inner peace, or simply a way to connect more deeply with yourself, Tarot reading is a wonderful and illuminating journey to embark upon.",
+    first: "Through Tarot, you're encouraged to explore the depths of your psyche and confront the questions that linger in your mind. Each card's symbolism and interpretation provide a unique perspective, guiding you toward greater self-awareness and understanding.",
+    second: "This ancient practice encourages you to trust your intuition, fostering a stronger connection to your inner wisdom. As you engage in Tarot readings, you'll find that it not only helps you make decisions but also encourages personal growth by promoting mindfulness and self-reflection.",
+    third: "Incorporating Tarot into your life can be a transformative and empowering experience, enabling you to navigate life's twists and turns with newfound clarity and purpose. So, whether you're seeking guidance, inner peace, or simply a way to connect more deeply with yourself, Tarot reading is a wonderful and illuminating journey to embark upon.",
 }                       
 
 export const features = [
     {
         id: "feature-1",
-        icon: "/icons/mirror.png",
+        icon: "/icons/mirror2.png",
+        iconLink: "https://thenounproject.com/icon/mirror-4142792/",
         title: "Mirrors",
         content:
-        "Tarot cards are mirrors, reflecting the hidden facets of your inner world, allowing you to see your thoughts and emotions with newfound clarity and understanding.",
+        "Tarot cards are mirrors, reflecting your inner world, so you can see your thoughts and emotions with newfound clarity and understanding.",
     },
     {
         id: "feature-2",
         icon: "/icons/aligned.png",
+        iconLink: "https://thenounproject.com/icon/alignment-4653397/",
         title: "Alignment",
         content:
-        "Tarot reading facilitates personal alignment by helping you gain insight into your desires, fears, and potential paths, thus guiding you toward a more authentic and aligned life journey.",
+        "Reading tarot promotes personal alignment by helping to clarify values, goals, and choices that resonate with one's authentic self.",
     },
     {
         id: "feature-3",
         icon: "/icons/connection.png",
+        iconLink: "https://thenounproject.com/icon/connection-2108637/",
         title: "Connection",
         content:
-        "The personal alignment tarot provides cultivates a profound sense of presence, anchoring you in the current moment and strengthening your connection to the world by harmonizing your inner self with external experiences.",
+        "Tarot anchors you in the present and strengthens your connection to the world by harmonizing your internal and external experiences.",
     },
     {
         id: "feature-4",
         icon: "/icons/peace.png",
+        iconLink: "https://thenounproject.com/icon/peace-6139949/",
         title: "Peace",
         content:
-        "Reading tarot cultivates inner calmness and peace by providing a meditative and reflective space to explore life's complexities and find solace in the wisdom of the cards.",
+        "Readings cultivate inner peace by providing a meditative space to explore life's complexities and find solace in the wisdom of the cards.",
     },
   ];
 
