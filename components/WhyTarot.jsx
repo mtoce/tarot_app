@@ -7,7 +7,12 @@ const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-4 rounded-3xl ${index !== features.length -1 ? 'mb-6' : 'mb-0'} text-white-s gold-gradient-hover`}>
     {/* div containing feature icon */}
     <div className={`w-[128px] h-[128px] rounded-full flex justify-center items-center`}>
-      <img src={icon} alt='icon' className='w-[60%] h-[60%] rounded-full object-contain'/>
+      {/* Currently using an img tag to load svg icons, TODO: use svg tag (if I can pass as props?) so I can
+      customize colors and change color of icon when hovered and the gradient of card shows */}
+      <img 
+      src={icon}
+      alt='icon' className='w-[60%] h-[60%] rounded-full object-contain'/>
+      {/* TODO: <svg>{icon}</svg> */}
     </div>
     <div className='flex-1 flex flex-col max-w-[470px]'>
       <h4 className='font-mono font-semibold text-[18px] mb-1 mt-1'>

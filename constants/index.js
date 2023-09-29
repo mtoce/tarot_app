@@ -9,7 +9,7 @@ export const WhyBlurb = {
 export const features = [
     {
         id: "feature-1",
-        icon: "/icons/mirror2.png",
+        icon: "/icons/mirror.svg",
         iconLink: "https://thenounproject.com/icon/mirror-4142792/",
         title: "Mirrors",
         content:
@@ -17,15 +17,15 @@ export const features = [
     },
     {
         id: "feature-2",
-        icon: "/icons/aligned.png",
+        icon: "/icons/harmony.svg",
         iconLink: "https://thenounproject.com/icon/alignment-4653397/",
-        title: "Alignment",
+        title: "Harmony",
         content:
-        "Reading tarot promotes personal alignment by helping to clarify values, goals, and choices that resonate with one's authentic self.",
+        "Reading tarot promotes harmony within by helping to clarify values, goals, and choices that resonate with one's authentic self.",
     },
     {
         id: "feature-3",
-        icon: "/icons/connection.png",
+        icon: "/icons/connection.svg",
         iconLink: "https://thenounproject.com/icon/connection-2108637/",
         title: "Connection",
         content:
@@ -33,7 +33,7 @@ export const features = [
     },
     {
         id: "feature-4",
-        icon: "/icons/peace.png",
+        icon: "/icons/peace.svg",
         iconLink: "https://thenounproject.com/icon/peace-6139949/",
         title: "Peace",
         content:
