@@ -11,7 +11,7 @@
 }
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 py-4 bg-space text-white-s;
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 py-4 bg-black text-white-s;
 }
 
 .section {
@@ -26,17 +26,25 @@
   @apply text-xs font-mono pt-2
 }
 
+.img-container {
+  @apply relative;
+}
+
+.overlay-img {
+  @apply absolute top-0 left-0;
+}
+
 .btn_gold {
-  @apply rounded-full border border-gold bg-space text-gold py-1.5 px-5 transition-all 
-  hover:bg-white-base hover:text-space text-center text-sm items-center justify-center
+  @apply rounded-full border border-gold bg-onyx text-gold py-1.5 px-5 transition-all 
+  hover:bg-white-base hover:text-onyx text-center text-sm items-center justify-center
 }
 
 .btn_white-s {
-  @apply rounded-full border border-white-s bg-space text-white-s py-1.5 px-5 transition-all 
-  hover:bg-white-s hover:text-space text-center text-sm items-center justify-center
+  @apply rounded-full border border-white-s bg-onyx text-white-s py-1.5 px-5 transition-all 
+  hover:bg-white-s hover:text-onyx hover:border-onyx text-center text-sm items-center justify-center
 }
 
-.gold-gradient-hover {
-  @apply hover:bg-gradient-to-r from-white-s to-gold text-space
+.gold-gradient {
+  @apply bg-gradient-to-r from-white-s to-gold text-black
 }
 

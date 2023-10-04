@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Challenges I faced with deployment
+
+1. Authentication
+
+Setting up authentication requires multiple steps to set up correctly.
+
+2. Inserting my svg icons in reusable feature card component
+
+ I created a reusable component that required I send the icons as props. It took me a while to figure out how to use them with svg tags as I needed to update their color with css depending on the hover state of the feature card.
+
+3. Connecting to the DB

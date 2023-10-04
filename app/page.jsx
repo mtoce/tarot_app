@@ -7,7 +7,7 @@ import Footer from '@components/Footer'
 
 const Home = () => {
   return (
-    <section>
+    <section className='app'>
       <Hero />
       <WhyTarot />
       <Testimonials />

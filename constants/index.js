@@ -34,6 +34,8 @@ export const features = [
     {
         id: "feature-4",
         icon: "/icons/peace.svg",
+        icon1: "icons/peace.svg",
+        icon2: "icons/peace2.svg",
         iconLink: "https://thenounproject.com/icon/peace-6139949/",
         title: "Peace",
         content:

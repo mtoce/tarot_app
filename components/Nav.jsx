@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
+import TarotLogo from '../public/icons/tarot_logo.svg';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
@@ -16,19 +17,27 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className='flex justify-between w-full mb-16 pt-3 bg-gold'>
-        <Link href="/" className='flex gap-2 flex-center'>
-            <Image 
-                src='/images/logo2.svg'
-                alt='Totally Tarot logo'
-                priority={true}
+    <nav className='flex justify-between w-full bg-steel'>
+        <div className='p-3 pl-5'>
+            <Link href="/" className='flex gap-2 flex-center items-center bg-black rounded-full'>
+                <TarotLogo 
                 width={50}
                 height={50}
-                className='rounded-full object-contain'
-            />
-        </Link>
+                className='stroke-gold fill-gold pl-1'
+                />
+                <h1 className='font-mono text-lg text-gold pr-3'>Totally Tarot</h1>
+                {/* <Image 
+                    src='/icons/tarot_logo_white.png'
+                    alt='Totally Tarot logo'
+                    priority={true}
+                    width={50}
+                    height={50}
+                    className='rounded-full object-contain'
+                /> */}
+            </Link>
+        </div>
         {/* Desktop Navigation */}
-        <div>
+        <div className='p-3 pr-5'>
             {/* check if user is logged in */}
             {session?.user 
             ? (
