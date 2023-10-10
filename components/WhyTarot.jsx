@@ -1,12 +1,18 @@
 import React from 'react'
-import { WhyBlurb, features } from '@constants';
+import { features, Cards } from '@constants';
 // import Peace from '/icons/peace.svg';
 // import Connection from '/icons/connection.svg';
 
 // Eventually, I would like to set this image icon as empty and fill with the icons I would like to use when calling the function (passing the images in as props) instead of how I'm doing it here.
-
+// ${index !== features.length -3 && index !== features.length -1 ? 'gold-gradient-left' : 'gold-gradient-right'}
+// $("#"+array[ix]).css("background-color","#ff0000");
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-4 rounded-3xl ${index !== features.length -1 ? 'mb-6' : 'mb-0'} text-white-s gold-gradient`}>
+  <div className={`flex flex-row p-2 rounded-3xl mb-2 text-white-s leading-[26px] max-w-[550px] 
+  ${index == features.length -4 ? 'gold-gradient-top-left' : ''}
+  ${index == features.length -3 ? 'gold-gradient-top-right' : ''}
+  ${index == features.length -2 ? 'gold-gradient-bot-left' : ''}
+  ${index == features.length -1 ? 'gold-gradient-bot-right' : ''}`
+  }>
     {/* div containing feature icon */}
     <div className={`w-[128px] h-[128px] rounded-full flex justify-center items-center`}>
         <img 
@@ -24,32 +30,22 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 )
 
-// const WhyBlurbCard = () => {
-//   return (
-//     <div>
-//       <FeatureCard />
-//     </div>
-//   )
-// }
-
 const WhyTarot = () => {
   return (
-    <section className='section'>
-      <div className='pb-4'>
-        <h1 className='heading'>
-          . . . Why Tarot?
+    <section className='pt-4 pb-4 flex flex-col justify-center items-center gap-6'>
+      <div className='lg:pb-0 hidden lg:block max-w-[550px]'>
+        <h1 className='text-[40px] font-sans font-semibold mb-4 text-center'>
+          ... Why Tarot?
         </h1>
-        {/* <p className='paragraph max-w-[670px]'>
-          {WhyBlurb.first}
+        <img 
+          src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2023/03/20185003/shutterstock_1589260768-min-806x537-1.jpeg"
+          className='rounded-3xl mt-4'
+        />
+        <p className='paragraph mt-2'>
+          {Cards.MajorArcana.Sun.rank} {" - "} {Cards.MajorArcana.Sun.name} {": "} {Cards.MajorArcana.Sun.upright}
         </p>
-        <p className='paragraph max-w-[670px]'>
-          {WhyBlurb.second}
-        </p>
-        <p className='paragraph max-w-[670px]'>
-          {WhyBlurb.third}
-        </p> */}
       </div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col lg:grid grid-cols-2 gap-4'>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index}/>
         ))}

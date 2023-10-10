@@ -61,8 +61,8 @@ export const TarotTestimonials = {
     }
 }
 
-export const Cards = [
-    { MajorArcana: {
+export const Cards = { 
+    MajorArcana: {
         Fool: {
             name: "The Fool",
             rank: '0',
@@ -262,8 +262,8 @@ export const Cards = [
             description: '',
             suit: 'Major',
         },
-    }},
-    { MinorArcana: {
+    },
+    MinorArcana: {
         Swords: {
             Ace: {
                 name: 'Ace of Swords',
@@ -835,4 +835,3 @@ export const Cards = [
 
     }
 }
-]

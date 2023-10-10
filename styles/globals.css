@@ -40,11 +40,22 @@
 }
 
 .btn_white-s {
-  @apply rounded-full border border-white-s bg-onyx text-white-s py-1.5 px-5 transition-all 
-  hover:bg-white-s hover:text-onyx hover:border-onyx text-center text-sm items-center justify-center
+  @apply rounded-full border border-black bg-black text-white-s py-1.5 px-5 transition-all 
+  hover:bg-white-s hover:text-black hover:border-black text-center text-sm items-center justify-center
 }
 
-.gold-gradient {
-  @apply bg-gradient-to-r from-white-s to-gold text-black
+.gold-gradient-top-left {
+  @apply lg:bg-gradient-to-tl bg-gradient-to-r from-gold lg:from-35% to-white-s text-black font-semibold
 }
 
+.gold-gradient-bot-left {
+  @apply lg:bg-gradient-to-bl bg-gradient-to-r from-gold lg:from-35% to-white-s text-black font-semibold
+}
+
+.gold-gradient-top-right {
+  @apply lg:bg-gradient-to-tr bg-gradient-to-r from-gold lg:from-35% to-white-s text-black font-semibold
+}
+
+.gold-gradient-bot-right {
+  @apply lg:bg-gradient-to-br bg-gradient-to-r from-gold lg:from-35% to-white-s text-black font-semibold
+}

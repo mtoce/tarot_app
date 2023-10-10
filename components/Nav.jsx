@@ -17,15 +17,15 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className='flex justify-between w-full bg-steel'>
+    <nav className='flex justify-between w-full bg-white-s'>
         <div className='p-3 pl-5'>
-            <Link href="/" className='flex gap-2 flex-center items-center bg-black rounded-full'>
+            <Link href="/" className='group flex gap-2 flex-center items-center bg-black border border-black hover:bg-white-s rounded-full'>
                 <TarotLogo 
                 width={50}
                 height={50}
-                className='stroke-gold fill-gold pl-1'
+                className='stroke-white-s fill-white-s group-hover:stroke-black group-hover:fill-black pl-1'
                 />
-                <h1 className='font-mono text-lg text-gold pr-3'>Totally Tarot</h1>
+                <h1 className='font-mono text-lg text-white-s group-hover:text-black pr-3'>Totally Tarot</h1>
                 {/* <Image 
                     src='/icons/tarot_logo_white.png'
                     alt='Totally Tarot logo'
