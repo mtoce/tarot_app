@@ -59,3 +59,4 @@
 .gold-gradient-bot-right {
   @apply lg:bg-gradient-to-br bg-gradient-to-r from-gold lg:from-35% to-white-s text-black font-semibold
 }
+

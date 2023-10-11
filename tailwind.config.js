@@ -6,13 +6,14 @@ module.exports = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './styles/**/*.{js,ts,jsx,tsx,md}',
   ],
   theme: {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-radial-from-mid': 'radial-gradient(115% 90% at 0% 50%, var(--tw-gradient-stops))'
       },
       fontFamily: {
         sans: ["var(--font-opensans)"],
